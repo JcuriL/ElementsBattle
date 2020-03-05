@@ -1,0 +1,27 @@
+<div *ngIf="element">
+  <div>
+    <h1>{{element.name | uppercase}}</h1>
+    <div class="element {{element.name}}">
+    </div>
+    <div>
+      <h2>WEAKNESS</h2>
+      <ul class="listElements">
+        <li *ngFor="let weak of element.weakness">
+          <div class="element {{weak}}"></div>
+        </li>
+      </ul>
+      <h2>RESISTANCE</h2>
+      <ul class="listElements">
+        <li *ngFor="let res of element.resistance">
+          <div class="element {{res}}"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <ul class="listElements">
+    <li *ngFor="let score of element.scores">
+      <h2>{{score.name}}: {{score.value}}</h2>
+    </li>
+  </ul>
+</div>
+<button class="btn btn-primary" (click)="goBack()">Back</button>

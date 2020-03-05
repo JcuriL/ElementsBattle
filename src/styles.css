@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+.listElements li {
+  display: inline;
+}
+
+.element {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  margin: 1em;
+}
+
+.fire {
+  background-color: red;
+}
+
+.water {
+  background-color: dodgerblue;
+}
+
+.earth {
+  background-color: saddlebrown;
+}
+
+.wind {
+  background-color: lightgreen;
+}
+
+.ligth {
+  background-color: yellow;
+}
+
+.dark {
+  background-color: purple;
+}
+
+.neutral {
+  background-color: grey;
+}
+
+button, div {
+  text-align: center;
+}
+
+.arena {
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  margin: 1em;
+}
+.field_battle {
+  height: 100px;
+  width: 100px;
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}

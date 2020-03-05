@@ -1,0 +1,11 @@
+<ul class="listElements">
+  <li *ngFor="let sElement of elements$">
+    <a routerLink="/element/{{sElement.name}}">
+      <div class="element {{sElement.name}}">
+       <p>{{sElement.name}}</p>
+      </div>
+    </a>
+  </li>
+</ul>
+  <app-battle></app-battle>
+<!--<button (click)="getListElements()"></button>-->

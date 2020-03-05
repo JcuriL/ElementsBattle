@@ -1,0 +1,3 @@
+<div *ngFor="let fighter of fighters$">
+  <button class="btn btn-info" id="{{fighter.name}}" (click)="selectFighter(fighter.name)"  disabled="{{buttonDisabled}}">{{fighter.name}}</button>
+</div>
